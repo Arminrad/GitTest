@@ -19,6 +19,7 @@ public class Main {
                 "    phone_number  bigInt," +
                 "    age    integer" +
                 ")";
+        System.out.println("Hello Group 2!");
         statement.execute(createPersonTableString);
         System.out.println("Table created successfully...");
         connection.close();
