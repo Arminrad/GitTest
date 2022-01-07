@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
+
         Connection connection = DriverManager.getConnection
                 ("jdbc:postgresql://localhost:5432/postgres", "postgres", "admin");
         Statement statement = connection.createStatement();
@@ -22,5 +23,8 @@ public class Main {
         statement.execute(createPersonTableString);
         System.out.println("Table created successfully...");
         connection.close();
+
+        int numbershariati;
+
     }
 }
