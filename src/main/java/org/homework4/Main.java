@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         int number;
         String name;
+        int numbershariati;
         System.out.println("Hello World");
         String hw = "HELLO WORLDDD";
         Connection connection = DriverManager.getConnection
@@ -27,5 +28,7 @@ public class Main {
         statement.execute(createPersonTableString);
         System.out.println("Table created successfully...");
         connection.close();
+
+
     }
 }
